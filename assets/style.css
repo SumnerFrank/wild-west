@@ -3,11 +3,29 @@ body {
     font-family: Helvetica;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: top;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+    url('./images/handshake.jpg');
+    margin: 0;
+}
+
 .nav-bar {
     display: flex;
     justify-content: center;
-    align-content: space-between;
+    text-align: space-around;
     text-shadow: 1px 1px grey;
+    background-color: antiquewhite;
+    opacity: .5;
+    position: relative;
 }
 
 li {
@@ -28,11 +46,16 @@ li {
 }
 
 h1 {
-    text-shadow: 2px 2px grey;
+    text-shadow: 2px 2px grey
 }
 
-.hero-photo {
+.contact-btn {
     display: flex;
-    width: 60%;
-    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: bottom;
+}
+
+p {
+    text-shadow: 1px 1px grey;
 }
