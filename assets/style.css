@@ -11,11 +11,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     align-items: center;
     justify-content: top;
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
     url('./images/handshake.jpg');
-    margin: 0;
+    margin-top: 0;
 }
 
 .nav-bar {
@@ -23,12 +24,23 @@ body {
     justify-content: center;
     text-align: space-around;
     text-shadow: 1px 1px grey;
+    box-shadow: 1px 1px 4px 0;
     background-color: antiquewhite;
     opacity: .5;
     position: relative;
+    z-index: 3;
+    width: 100%;
+}
+
+.nav-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
 }
 
 li {
+    cursor: pointer;
     float: left;
     display: block;
     color: black;
